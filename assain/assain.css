@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*========= common style ========*/
+.disply-none{
+    display: none;
+}
+main{
+    width: 1158px;
+    margin: 20px auto;
+}
+.text-style{
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 30px;
+    /* color: #FEA301; */
+}
+.text-color{
+    color: #5D58EF;
+}
+.btn{
+    width: 197px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 12px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #FEA301;
+}
+
+.span-color-1{
+    color: #FEA301;
+}
+.span-color-2{
+    color: #01ACFD;
+}
+.span-color-3{
+    color: #05D4DF;
+}
+.span-color-4{
+    color: #5D58EF;
+}
+ .storie-button{
+    margin-left: 33px;
+    margin-top: -30px;
+    margin-bottom: 33px;
+ }
+.stoeise-btn{
+    width: 174px;
+    height: 47px;
+    border-radius: 47px;
+    color: #FFFFFF;
+    border: none;
+        
+}
+/*========= common style ========*/
+
+/*========= nav start style  ========*/
+header{
+    width: 1158px;
+    margin: 20px auto;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+
+nav li{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+}
+.nav-link{
+    display: flex;
+    gap: 32px;
+}
+
+/*========= nav end style ========*/
+
+/*========= container style start ========*/
+
+.container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 50px;
+}
+.container-title{
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 61px;
+}
+.container-des{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-weight: 200;
+    color: #000000;
+}
+
+.btn-1{
+    width: 197px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 12px;
+    border: none;
+    color: #FFFFFF;
+    background-color: black;
+}
+/*========= container style end ========*/
+/*========= curiiculam style start ========*/
+ .curriculam{
+    background-image: url(../assets/bg.png);
+ }
+ .curriculam-title{
+    margin-top: 60px;
+    font-weight: 700;
+    font-size: 2.9rem;
+    line-height: 57px;
+    text-align: center;
+    margin-bottom: 260px;
+ }
+.curriculam-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 16px;
+    
+}
+.curriculam-card{
+     width: 367px;
+     height: 481px;
+     border-radius: 18px; 
+     padding: 52px 40px;
+    text-align: center;
+    border: 1px solid rgb(247, 243, 243);
+}
+
+.card-1{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(222,245,255,1) 100%);
+}
+.card-2{
+    background: rgb(255,255,255);
+   background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,244,220,1) 100%);
+}
+.card-3{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242,232,255,1) 100%);
+}
+.card-title{
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 30px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.card-des{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 28px;
+    color: #808080;
+    margin-bottom: 33px;
+}
+.round-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+.round{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    background-color: #FEA301;
+}
+
+
+
+@media screen and (max-width:600px){
+    .grid-container{
+        padding: 40px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+} 
+/*========= container style end ========*/
+/*========= common style ========*/
+.Our-storise{
+    background-image: url("../assets/bg.png");
+}
+.Stories-container{
+    display: grid;
+    grid-template-columns: 540px repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    gap: 18px;
+}
+.span-2{
+    grid-row: span 2;
+}
+.storise-card-img{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.Our-title{
+    font-weight: 700;
+    font-size: 2.9rem;
+    line-height: 57px;
+    color: #000000;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.storise-card{
+     border: 1px solid rgb(245, 244, 244); 
+     border-radius: 16px;
+     background-color: #fff;
+    
+}
+.stoeise-btn-col-1{
+    background-color: #3CD8E8;
+}
+.stoeise-btn-col-2{
+    background-color: #95B226;
+}
+.stoeise-btn-col-3{
+    background-color: #3170ce;
+}
+
+.stoeise-title{
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 38px;
+    text-align: left;
+    color: #000000;
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-bottom: 47px;
+}
+.stoeise-sub-title{
+     font-weight: 700;
+     font-size: 1rem;
+     line-height: 28px;
+     text-align: left;
+     color: #000000;
+     margin-left: 38px;
+     /* margin-right: 38px; */
+     margin-bottom: 47px;
+}
+.stoeise-sub-des{
+    margin-left: 38px;
+    margin-right: 68px;
+    margin-bottom: 34px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 28px;
+    color: #666666;
+}
+.viw-btn{
+    margin-top: 60px;
+    text-align: center;
+}
+/*========= common style ========*/
+footer{
+    margin-top: 80px;
+    padding: 128px 22px 169px 141px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(202, 213, 228);
+    background: linear-gradient(0deg, rgb(10, 168, 207) 0%, rgb(113, 36, 214) 100%);
+}
+ .kide{
+    display: flex;
+     text-align: left;
+     gap: 10px;
+ }
+ .kide-des{
+    margin-top: 32px;
+    font-size: 1.1rem;
+    line-height: auto;
+    color: FFFFFF;
+ }
+.footer-container{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 100px;
+     color: #FFFFFF; 
+    
+}
+.school-title{
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.disply-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.disply-flex li{
+    list-style-type: none;
+}
+.fecbook{
+    margin-top: 24px;
+    width: 192px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+}
+.fecbook-title{
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+/*========= common style ========*/
+@media screen and (max-width: 576px){
+       main{
+        width: 425px;
+       }
+       .container{
+        padding: 10px;
+        flex-direction: column-reverse;
+       }
+       .container-contant{
+        text-align: center;
+       }
+       .curriculam-container{
+        grid-template-columns: repeat(1, 1fr);
+       }
+       .curriculam-title{
+        margin-bottom: 0;
+       }
+       .round{
+        display: none;
+       }
+       .Stories-container{
+        grid-template-columns: repeat(2, 1fr);
+       }
+       .hide{
+        display: none;
+       }
+       footer{
+        padding-left: 30px;
+       }
+       footer,
+       .disply-flex {
+        flex-direction: column;
+       }
+       .footer-container{
+        grid-template-columns: repeat(1, 1fr);
+       }
+  
+ }
