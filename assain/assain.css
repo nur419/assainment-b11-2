@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 /*========= common style ========*/
 .disply-none{
     display: none;
@@ -65,13 +66,20 @@ main{
 header{
     width: 1158px;
     margin: 20px auto;
+    
+}
+.font-icon{
+    display: none;
 }
 .logo{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 11px;
-}
+} 
+ .nav-link a.active{
+    background-color: red;
+} 
 nav{
     display: flex;
     align-items: center;
@@ -82,13 +90,20 @@ nav{
 nav li{
     list-style: none;
 }
-nav a{
-    text-decoration: none;
+.nav-link a{
+    text-decoration: none; 
 }
+
 .nav-link{
     display: flex;
     gap: 32px;
+
 }
+.nav-link .icon{
+    display: none;
+}
+
+
 
 /*========= nav end style ========*/
 
@@ -105,6 +120,7 @@ nav a{
     font-size: 3.8rem;
     line-height: 61px;
 }
+
 .container-des{
     margin-top: 24px;
     margin-bottom: 24px;
@@ -120,10 +136,44 @@ nav a{
     line-height: 30px;
     border-radius: 12px;
     border: none;
-    color: #FFFFFF;
+    color: #FFFFFF;  
     background-color: black;
 }
 /*========= container style end ========*/
+/*========= marquee style start ========*/
+
+.marquee {
+    height: 50px;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(228, 235, 234, 0.15);
+    overflow: hidden;
+    position: relative;
+    margin-top: 80px;
+    
+}
+  
+  .marquee div {
+     display: block;
+     width: 200%;
+     height: 30px;
+     position: absolute;
+     overflow: hidden;
+     animation: marquee 10s linear infinite;
+  }
+  
+  .marquee span {
+    float: left;
+    width: 100%;
+    font-size: 2rem;
+    
+  }
+  
+  @keyframes marquee {
+    0% { left: 100%; }
+    100% { left: -100%; }
+  }
+  /*========= marquee style end ========*/
 /*========= curiiculam style start ========*/
  .curriculam{
     background-image: url(../assets/bg.png);
@@ -199,14 +249,9 @@ nav a{
 
 
 
-@media screen and (max-width:600px){
-    .grid-container{
-        padding: 40px;
-        grid-template-columns: repeat(1, 1fr);
-    }
-} 
+
 /*========= container style end ========*/
-/*========= common style ========*/
+/*========= our storise style start ========*/
 .Our-storise{
     background-image: url("../assets/bg.png");
 }
@@ -284,7 +329,8 @@ nav a{
     margin-top: 60px;
     text-align: center;
 }
-/*========= common style ========*/
+/*========= our storise style end ========*/
+/*========= footer style  start ========*/
 footer{
     margin-top: 80px;
     padding: 128px 22px 169px 141px;
@@ -339,14 +385,35 @@ footer{
     line-height: 26px;
     color: #FFFFFF;
 }
-/*========= common style ========*/
+/*========= footer style end ========*/
 @media screen and (max-width: 576px){
-       main{
+       main,
+       header{
         width: 425px;
+       }
+       .font-icon{
+        display: block;
+        font-size: 3rem;
+        }
+       .nav-link{
+        display: none;
+       }
+       .nav-heading{
+        display: none;
+       }
+       .btn{
+        display: none;
        }
        .container{
         padding: 10px;
         flex-direction: column-reverse;
+       }
+       .container-title{
+        font-size: 2rem;
+        line-height: 40px;
+       }
+       .container-img{
+        width: 100%;
        }
        .container-contant{
         text-align: center;
@@ -354,8 +421,10 @@ footer{
        .curriculam-container{
         grid-template-columns: repeat(1, 1fr);
        }
+       
        .curriculam-title{
         margin-bottom: 0;
+        font-size: 2rem;
        }
        .round{
         display: none;
